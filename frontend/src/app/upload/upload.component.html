@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="upload-container">
+        <h3>Upload Your Image</h3>
+        <p>File should be jpeg,png..</p>
+        <div class="drag-container">
+
+            <div class="dropdiv" [class.processing]="processing" (dragover)="onDrag($event)" (drop)="onDrop($event)">
+                <input type="file" (change)="onChange($event)" style="display:none">
+                <img src="../../assets/image.svg" alt="icon" class="rounded mx-auto d-block">
+                <p class="msg">Drag and Drop your image here</p>
+            </div>
+        </div>
+        <p>Or</p>
+
+            <div class="upload">
+                <input type="file" name="uploadfile" id="img" style="display:none;" (change)="selectFile($event)" />
+                <label for="img" class="btn btn-primary">Choose a file</label>
+            </div>
+
+            <div class="col-2">
+                <button class="btn btn-success btn-sm" [hidden]="!selectedFiles" (click)="upload()">
+                    Upload
+                </button>
+            </div>
+
+
+        <div *ngIf="errmsg" class="alert alert-secondary" role="alert">{{ errmsg }}</div>
+
+    </div>
+</div>

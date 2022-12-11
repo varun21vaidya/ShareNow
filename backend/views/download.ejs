@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Page</title>
+    <link href="../public/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <section class="upload-container">
+        <div class="drop-zone">
+            <!-- if there is error in link or uuid has expired or invalid
+            show.js will give error and this error is printed here-->
+            <% if(locals.error) { %>
+                <h4>
+                    <%= locals.error %>
+                </h4>
+                <% } else { %>
+
+                    <!-- else provide the link to download file -->
+                    <div class="icon-container">
+                        <img src="../public/img/download-icon.png" alt="download-icon">
+                    </div>
+                    <div class="content">
+                        <h3>Your File is Ready to Download</h3>
+                        <p>Link Exprires in 24 Hours</p>
+                        <!-- file name and filesize are in show.js -->
+                        <h4>
+                            <%- fileName -%>
+                        </h4>
+                        <!-- filesize is available in bytes so convert it using /1000
+                and to remove decimal places use parseInt -->
+                        <small>
+                            <%- parseInt(fileSize/1000) -%>KB
+                        </small>
+                        <div class="send-btn-container">
+                            <a href="<%- downloadLink %>">Download File</a>
+                        </div>
+                    </div>
+                    <% } %>
+        </div>
+    </section>
+
+</html>
