@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class FileuploadService {
   // base url
-  host = 'http://localhost:3000/';
+  host = 'https://share-now-backend-gi2ea360d-varun21vaidya.vercel.app/';
   uploadURL = `${this.host}api/files`;
 
   constructor(private http: HttpClient) {}
