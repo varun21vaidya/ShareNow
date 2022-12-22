@@ -27,35 +27,33 @@ export class UploadComponent implements OnInit {
 
   ngOnInit(): void {}
 
-// drag and drop files
-    processing?:boolean;
+  // drag and drop files
+  processing?: boolean;
 
-    onDrag(event:any){
-      event.preventDefault();
-    }
+  onDrag(event: any) {
+    event.preventDefault();
+  }
 
-    onDrop(event:any){
-      event.preventDefault();
+  onDrop(event: any) {
+    event.preventDefault();
 
-      this.onFileChange(event.dataTransfer.files)
-    }
+    this.onFileChange(event.dataTransfer.files);
+  }
 
-    onChange(event:any){
-      this.onFileChange(event.target.files)
-    }
+  onChange(event: any) {
+    this.onFileChange(event.target.files);
+  }
 
-    private onFileChange(files:any){
-      this.processing=true;
-      this.selectedFiles=files;
-      setTimeout(() => {
-        console.log('processed');
-        this.processing=false;
-      },1000 );
+  private onFileChange(files: any) {
+    this.processing = true;
+    this.selectedFiles = files;
+    setTimeout(() => {
+      console.log('processed');
+      this.processing = false;
+    }, 1000);
+  }
 
-    }
-
-
-// select file 
+  // select file
   selectFile(event: any): void {
     this.selectedFiles = event.target.files;
   }
@@ -64,7 +62,7 @@ export class UploadComponent implements OnInit {
 
     if (this.selectedFiles) {
       const file: File | null = this.selectedFiles.item(0);
-
+      console.log('file has been selected');
       if (file) {
         this.currentFile = file;
 
@@ -72,15 +70,16 @@ export class UploadComponent implements OnInit {
           next: (event: any) => {
             if (event.type === HttpEventType.UploadProgress) {
               this.progress = Math.round((100 * event.loaded) / event.total);
-              
+              console.log(this.progress);
+              // console.log(event.loaded);
             } else if (event instanceof HttpResponse) {
-              // console.log('this is file link', event.body.file);
+              console.log('this is file link', event.body.file);
               this.message = event.body.file;
 
               // this service will send the download link from the server
               // to child component of upload complete
-              this.sendurl.link=this.message;
-              this.router.navigate(['/','uploaded']);
+              this.sendurl.link = this.message;
+              this.router.navigate(['/', 'uploaded']);
             }
           },
           error: (err: any) => {

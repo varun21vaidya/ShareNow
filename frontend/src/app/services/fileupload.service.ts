@@ -7,14 +7,15 @@ import { Observable } from 'rxjs';
 })
 export class FileuploadService {
   // base url
-  host = 'https://share-now-backend-gi2ea360d-varun21vaidya.vercel.app/';
+  // host = 'https://share-now-backend.vercel.app/';
+  host = 'https://sharenow.onrender.com/';
+  // host = 'http://localhost:3000/';
   uploadURL = `${this.host}api/files`;
 
   constructor(private http: HttpClient) {}
 
   upload(file: File): Observable<HttpEvent<any>> {
     const formData: FormData = new FormData();
-
     formData.append('myfile', file);
 
     const req = new HttpRequest('POST', `${this.uploadURL}`, formData, {
