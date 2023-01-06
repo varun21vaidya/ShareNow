@@ -1,6 +1,6 @@
 .container,
 .drag-container,
-.upload-container {
+.upload-container,.uploader {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,22 +11,27 @@
   height: 100vh;
 }
 
-.upload-container {
-  border: 1px solid black;
-  padding: 20px 15px;
+.uploader {
   width: 350px;
-  height: 470px;
-  justify-content: space-around;
+  height: 420px;
+  justify-content: space-evenly;
   border: none;
-  box-shadow: 1px 2px 20px 0px rgb(0 0 0 / 20%);
+}
+
+.upload-container{
   border-radius: 10px;
   background-color: white;
+  box-shadow: 1px 2px 20px 0px rgb(0 0 0 / 20%);
 }
 
 .drag-container {
   box-sizing: border-box;
-  padding: 20px 10px;
   background: #f6f8fb;
   border: 2px dashed #97bef49c;
   border-radius: 12px;
+}
+
+.files {
+  width: 225px;
+  height: 130px;
 }
