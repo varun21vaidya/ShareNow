@@ -17,15 +17,17 @@ https://github.com/varun21vaidya/ShareNow-Backend
 
 ## Demo:
 
-https://user-images.githubusercontent.com/65745841/210172129-fe3074f5-38d8-4cea-892b-5874058e06f9.mp4
+
+https://user-images.githubusercontent.com/65745841/211022568-428f7b80-e4ea-4840-acb1-312da8f13a7c.mp4
+
 
 ## Overview:
 
 Hey, remember that day when you wanted to share that video or different format file but WhatsApp would reduce its quality or wouldn't support that format. Well we all have faced similar situations when we wanted to share file with our friend or family folder to cousins. But here is an application where we can directly send Any Type of File to Any user and he can download it with just a link, no signup or login required.
 
-![image](https://user-images.githubusercontent.com/65745841/210172061-e197de65-370c-44a3-8279-acca57677b5d.png)
-![image](https://user-images.githubusercontent.com/65745841/210172064-582337ac-4d5f-4788-a12b-34064733d86a.png)
-![image](https://user-images.githubusercontent.com/65745841/210172073-9870d778-7c7e-470e-bf5d-f8e0e60515c6.png)
+![Screenshot (445)](https://user-images.githubusercontent.com/65745841/211022614-40b65cb4-8b03-4f24-8424-c705df18f6af.png)
+![Screenshot (446)](https://user-images.githubusercontent.com/65745841/211022629-ab4897b3-8bdc-46d6-bae0-c746398d7299.png)
+![Screenshot (447)](https://user-images.githubusercontent.com/65745841/211022641-6ad9e65e-0a7b-4956-830a-78dc395d0f5d.png)
 
 ### Built With:
 
