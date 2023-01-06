@@ -1,13 +1,18 @@
 # ShareNow - Quickly Share Any File
 
-
+- [Demo](#demo)
 - [Overview](#overview)
   - [Built With](#built-with)
 - [Features](#features)
 - [How to use](#how-to-use)
 - [Contact](#contact)
 
-Backend Code:
+---
+
+- Live Site:
+https://share-now-file-sharing-app.vercel.app/
+
+- Backend Code:
 https://github.com/varun21vaidya/ShareNow-Backend
 
 ## Demo:
