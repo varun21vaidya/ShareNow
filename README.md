@@ -15,6 +15,9 @@ https://share-now-file-sharing-app.vercel.app/
 - Backend Code:
 https://github.com/varun21vaidya/ShareNow-Backend
 
+- Note: Deployed App may take couple of minutes to rebuild.
+
+
 ## Demo:
 
 
