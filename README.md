@@ -32,12 +32,6 @@ Hey, remember that day when you wanted to share that video or different format f
 ![Screenshot (446)](https://user-images.githubusercontent.com/65745841/211022629-ab4897b3-8bdc-46d6-bae0-c746398d7299.png)
 ![Screenshot (447)](https://user-images.githubusercontent.com/65745841/211022641-6ad9e65e-0a7b-4956-830a-78dc395d0f5d.png)
 
-### Built With:
-
-- Frontend: Angular
-- Backend: NodeJS and ExpressJS
-- Database: MongoDB Atlas
-
 ## Features:
 
 - User story: I can drag and drop an image to upload it
